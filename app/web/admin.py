@@ -220,7 +220,7 @@ def edit_new(ZT, name_id):
 
     name = Note_yet.query.get(name_id)
     student = Note.query.filter_by(xh=name.xh).first()
-    student_admin_id = Admin.query.filter_by(xy=ZZY_FORM.campus.data).first()
+    student_admin_id = Admin.query.filter_by(id=name.admin_id).first()
 
     if ZT == 'zhuanzhuanye':
         if ZZY_FORM.validate_on_submit():

@@ -29,7 +29,7 @@ def excel(excel):
     conn = pymysql.connect(
         host='127.0.0.1',
         user='root',
-        passwd='Qwer123456',
+        passwd='root',
         db='xueji',
         port=3306,
         charset='utf8'
